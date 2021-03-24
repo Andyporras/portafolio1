@@ -1,12 +1,12 @@
 """
-nombre:7
+nombre:
 pasarAentero
 entrada:
 num=numero entero mayor que cero
 salida:
 numero entero
 retrincciones:
-numero con mayor que cero con decimales 
+numero mayor que cero con decimales 
 """
 def pasarAentero(num):
     if(isinstance(num,float) and num>0):
@@ -72,7 +72,7 @@ def contarDigitosFlotante_aux(num):
 #------------------------------------------------------
 """
 nombre:
-indiceNumero
+indice
 entrada:
 num=numero entero positivo.
 indice= numero entero positivo
@@ -88,7 +88,7 @@ def indice(num,indice):
         comparar=num-1
         return indice_aux(num,indice+1,largo,comparar)
     else:
-        return "error"
+        return "error, digite un numero entero positivo"
 
 def indice_aux(num,indice,largo,comparar):
     if(num==0):
@@ -113,7 +113,7 @@ def largo_aux(num):
 #---------------------------------------------------------------
 """
 nombre:
-contarNumero
+sumaIndice
 entrada:
 numeros entero positivo
 salida:
@@ -133,7 +133,7 @@ def sumaIndice(num,indice1,indice2):
         else:
             return 0
     else:
-        "error"
+        return "error,digite un numero entero positivo"
     
     
 
